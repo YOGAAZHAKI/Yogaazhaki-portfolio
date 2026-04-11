@@ -1,0 +1,163 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contact-heading {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.contact-note {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(10px);
+  color: var(--accent-primary);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  background-color: var(--card-bg);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--accent-secondary);
+  border-bottom: 1px dashed var(--accent-secondary);
+  padding-bottom: 2px;
+}
+
+.social-icon:hover {
+  color: var(--accent-primary);
+  border-bottom-color: var(--accent-primary);
+  border-bottom-style: solid;
+}
+
+.contact-form {
+  background-color: var(--card-bg);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 10px 10px 0 rgba(245, 166, 35, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.5rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: var(--accent-primary);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: transparent; /* hide placeholder to use label as floating */
+}
+
+.form-group label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+  top: -1.2rem;
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+}
+
+.form-submit {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 6rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.footer .copyright {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-form {
+    padding: 2rem;
+  }
+}
