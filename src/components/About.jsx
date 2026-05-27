@@ -2,13 +2,20 @@ import React, { useState, useEffect } from 'react';
 import './About.css';
 
 const About = () => {
-  const learningTopics = ['Cloud Native', 'LLM Fine-tuning', 'System Design', 'Three.js'];
+  const learningTopics = [
+    'Generative AI',
+    'Computer Vision',
+    'NLP',
+    'CrewAI'
+  ];
+
   const [topicIndex, setTopicIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTopicIndex((prev) => (prev + 1) % learningTopics.length);
     }, 3000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -16,30 +23,67 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="container">
         <h2 className="section-title">01. About Me</h2>
-        
+
         <div className="about-grid">
           <div className="about-content">
             <p className="about-bio">
-              Hey, I'm Yoga — a Computer Science student specializing in AI & ML at KPRIET. I love building things that sit at the intersection of intelligence and usability. From training ML models to shipping full-stack apps, I enjoy the entire process of turning an idea into something real. When I'm not coding, I'm probably reading about the latest in generative AI or solving problems on LeetCode.
+              I am an AI & ML undergraduate at KPR Institute of Engineering
+              and Technology with strong interests in Generative AI,
+              Full Stack Development, NLP, and Computer Vision.
+              I enjoy building intelligent software systems that combine
+              scalable engineering with practical AI applications.
             </p>
-            
+
+            <p className="about-bio">
+              My experience includes developing full-stack applications,
+              machine learning systems, and AI-powered solutions using
+              modern technologies such as React, FastAPI, Python, and LLM-based workflows.
+              I am currently working as a Software Development Intern at Payoda Technologies.
+            </p>
+
             <div className="about-stats">
               <div className="stat-card">
                 <span className="stat-label">Education</span>
-                <span className="stat-value">B.E. AI & ML</span>
-                <span className="stat-desc">KPR Institute of Engineering and Technology</span>
-                <span className="stat-desc">2023–2027</span>
+
+                <span className="stat-value">
+                  B.E. CSE (AI & ML)
+                </span>
+
+                <span className="stat-desc">
+                  KPR Institute of Engineering and Technology
+                </span>
+
+                <span className="stat-desc">
+                  2023 – 2027
+                </span>
               </div>
+
               <div className="stat-card">
                 <span className="stat-label">CGPA</span>
-                <span className="stat-value highlight">9.2</span>
-                <span className="stat-desc">Honors CGPA: <span className="highlight">9.4</span> (Full Stack)</span>
+
+                <span className="stat-value highlight">
+                  9.08
+                </span>
+
+                <span className="stat-desc">
+                  Honors in Full Stack Development
+                </span>
+
+                <span className="stat-desc highlight">
+                  Honors CGPA: 9.4
+                </span>
               </div>
             </div>
 
             <div className="learning-tag">
-              <span className="learning-label">Currently learning:</span>
-              <span className="learning-topic animate-slide-up" key={topicIndex}>
+              <span className="learning-label">
+                Currently Exploring:
+              </span>
+
+              <span
+                className="learning-topic animate-slide-up"
+                key={topicIndex}
+              >
                 {learningTopics[topicIndex]}
               </span>
             </div>
@@ -52,24 +96,24 @@ const About = () => {
                 <span className="dot dot-y"></span>
                 <span className="dot dot-g"></span>
               </div>
+
               <pre className="code-content">
                 <code>
-{`class Yogaazhaki {
-  constructor() {
-    this.name = 'Yogaazhaki S';
-    this.major = 'AI & ML';
-    this.passion = ['AI', 'Web'];
-  }
-  
-  solveProblem() {
-    return this.passion.map(
-      field => \`Applying \${field}\`
-    );
-  }
-}`}
+                  {`const developer = {
+  name: "Yogaazhaki S",
+  role: "AI/ML Developer",
+  skills: [
+    "Generative AI",
+    "Full Stack",
+    "NLP",
+    "Computer Vision"
+  ],
+  currentlyWorking: "Payoda Technologies"
+};`}
                 </code>
               </pre>
             </div>
+
             <div className="decorative-shape"></div>
           </div>
         </div>
