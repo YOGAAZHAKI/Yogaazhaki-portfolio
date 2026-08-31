@@ -4,32 +4,39 @@ import './Projects.css';
 const Projects = () => {
   const projectList = [
     {
-      title: 'AI-Based Smart Hostel Anomaly Detection System',
-      date: 'Dec 2025 – Jan 2026',
-      tags: ['Computer Vision', 'AI', 'Python'],
-      desc: 'Real-time alert generation + automated evidence capture',
-      github: 'https://github.com/YOGAAZHAKI/smart-hostel-anomaly-detection'
+      title: 'CodeMate – AI-Powered Codebase Onboarding Agent',
+      date: 'Jun 2026 – Aug 2026',
+      tags: ['Python', 'Gemini', 'RAG', 'ChromaDB'],
+      desc: 'Built an AI codebase assistant using Python, Gemini, RAG, and ChromaDB for intelligent code search, semantic retrieval, and developer onboarding.',
+      github: 'https://github.com/YOGAAZHAKI/CodeMate.git'
     },
     {
-      title: 'Job Seeker Web Application',
-      date: 'Jan 2026 – Feb 2026',
-      tags: ['MERN', 'REST API', 'Full Stack'],
-      desc: 'Auth + resume-based skill extraction + Jooble API integration',
-      github: 'https://github.com/YOGAAZHAKI/jobSeeker.git'
+      title: 'HealthLens AI – AI-Powered Medical Report Intelligence Platform',
+      date: 'May 2026 – Jul 2026',
+      tags: ['Python', 'FastAPI', 'OCR', 'LLMs'],
+      desc: 'Developed an AI medical report analysis platform using Python, FastAPI, OCR, and LLMs for report extraction, summaries, and health trend analysis.',
+      github: 'https://github.com/Vikiviki006/Kartiline---HealthLens-AI.git'
     },
     {
       title: 'JobShield – AI-Based Fake Job Posting Detector',
       date: 'Mar 2026 – Apr 2026',
       tags: ['NLP', 'FastAPI', 'React', 'ML'],
-      desc: 'AI-powered fake job detection system with 7-factor risk scoring and Chrome extension support',
+      desc: 'Developed an NLP and Machine Learning system with FastAPI and Chrome Extension for real-time fraudulent job detection and risk analysis.',
       github: 'https://github.com/YOGAAZHAKI/Jobshield.git'
     },
     {
-      title: 'Anemia Detection System',
-      date: 'Mar 2025 – May 2025',
-      tags: ['ML', 'Scikit-Learn', 'Classification'],
-      desc: 'Naive Bayes, KNN, SVM models on CBC dataset',
-      github: 'https://github.com/YOGAAZHAKI/ANEMIA-DETECTION.git'
+      title: 'Job Seeker Web Application',
+      date: 'Jan 2026 – Feb 2026',
+      tags: ['MERN', 'REST API', 'Full Stack'],
+      desc: 'Built a MERN-based job portal with JWT authentication, resume-based NLP skill extraction, and Jooble API-driven recommendations.',
+      github: 'https://github.com/YOGAAZHAKI/jobSeeker.git'
+    },
+    {
+      title: 'AI-Based Smart Hostel Anomaly Detection System',
+      date: 'Dec 2025 – Jan 2026',
+      tags: ['Computer Vision', 'AI', 'Python'],
+      desc: 'Built a computer vision anomaly detection system using Python and OpenCV with automated evidence capture and alert generation.',
+      github: 'https://github.com/YOGAAZHAKI/smart-hostel-anomaly-detection'
     }
   ];
 

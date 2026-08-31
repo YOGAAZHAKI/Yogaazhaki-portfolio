@@ -38,7 +38,7 @@ const About = () => {
               My experience includes developing full-stack applications,
               machine learning systems, and AI-powered solutions using
               modern technologies such as React, FastAPI, Python, and LLM-based workflows.
-              I am currently working as a Software Development Intern at Payoda Technologies.
+              I recently completed a Software Development Internship at Payoda Technologies, working on backend APIs and agentic AI systems.
             </p>
 
             <div className="about-stats">
@@ -62,7 +62,7 @@ const About = () => {
                 <span className="stat-label">CGPA</span>
 
                 <span className="stat-value highlight">
-                  9.08
+                  9.03
                 </span>
 
                 <span className="stat-desc">
@@ -108,7 +108,7 @@ const About = () => {
     "NLP",
     "Computer Vision"
   ],
-  currentlyWorking: "Payoda Technologies"
+  internship: "Payoda Technologies"
 };`}
                 </code>
               </pre>

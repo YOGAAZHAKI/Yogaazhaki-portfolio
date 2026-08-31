@@ -7,8 +7,8 @@ const Experience = () => {
       type: 'Internship',
       title: 'Software Development Intern',
       place: 'Payoda Technologies',
-      date: 'Feb 2026 – Present',
-      desc: 'Contributing to Generative AI-based applications involving LLM workflows, CrewAI, and agentic AI concepts.'
+      date: 'Feb 2026 – Jul 2026',
+      desc: 'Developed Python-based backend services and RESTful APIs using FastAPI. Built Generative AI features using LLMs, prompt engineering, and multi-agent workflows with CrewAI.'
     },
     {
       type: 'Internship',

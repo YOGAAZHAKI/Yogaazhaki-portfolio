@@ -7,11 +7,18 @@ import {
   FaIndustry,
   FaCode,
   FaExternalLinkAlt,
-  FaBrain
+  FaBrain,
+  FaAmazon
 } from 'react-icons/fa';
 
 const Certifications = () => {
   const certs = [
+    {
+      title: 'Amazon ML Summer School 2026',
+      issuer: 'Amazon',
+      icon: <FaAmazon />,
+      link: '#'
+    },
     {
       title: 'Introduction to Large Language Models (LLMs)',
       issuer: 'NPTEL',

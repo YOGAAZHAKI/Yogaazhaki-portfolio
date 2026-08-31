@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       title: 'Backend & APIs',
-      skills: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs']
+      skills: ['Node.js', 'Express.js', 'FastAPI', 'Flask', 'REST APIs']
     },
     {
       title: 'ML / AI',
@@ -23,16 +23,25 @@ const Skills = () => {
         'NLP',
         'Computer Vision',
         'Generative AI',
+        'LLMs',
+        'RAG',
+        'Prompt Engineering',
+        'Embeddings',
+        'Semantic Search',
+        'Gemini',
+        'CrewAI',
+        'TensorFlow',
         'OpenCV',
         'YOLO',
         'Scikit-Learn',
-        'Streamlit',
-        'CrewAI'
+        'Pandas',
+        'NumPy',
+        'Streamlit'
       ]
     },
     {
       title: 'Databases',
-      skills: ['MySQL', 'MongoDB', 'PostgreSQL']
+      skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'ChromaDB']
     },
     {
       title: 'Tools',
